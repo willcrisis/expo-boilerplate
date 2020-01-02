@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "extends": ["airbnb-typescript", "plugin:prettier/recommended"],
+    "rules": {
+        "@typescript-eslint/indent": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/prop-types": [0],
+        "react/jsx-props-no-spreading": "off",
+        "global-require": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["."]
+            },
+            "babel-module": {
+                "alias": {
+                    "assets": "./assets",
+                    "components": "./components",
+                    "config": "./config",
+                    "contexts": "./contexts",
+                    "hooks": "./hooks",
+                    "screens": "./screens",
+                    "services": "./services",
+                    "theme": "./theme",
+                    "types": "./types"
+                }
+            }
+        }
+    }
+}
